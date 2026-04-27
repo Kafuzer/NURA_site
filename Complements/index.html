@@ -3,360 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NURA | Équilibre nerveux & gestion du stress</title>
-
+    <title>NURA | Équilibre nerveux & sérénité</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        nura: {
-                            background: '#080808',
-                            card: '#111111',
-                            light: '#E5E1DA',
-                            gold: '#C5A47E'
-                        }
+                        nura: { background: '#080808', card: '#111111', light: '#E5E1DA', gold: '#C5A47E' }
                     },
-                    fontFamily: {
-                        title: ['Playfair Display', 'serif'],
-                        text: ['Inter', 'sans-serif']
-                    }
+                    fontFamily: { title: ['Playfair Display', 'serif'], text: ['Inter', 'sans-serif'] }
                 }
             }
         }
     </script>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #080808;
-            color: #E5E1DA;
-            -webkit-font-smoothing: antialiased;
-            scroll-behavior: smooth;
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-family: 'Playfair Display', serif;
-        }
-
-        .button-glow {
-            box-shadow: 0 0 25px rgba(197, 164, 126, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .button-glow:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 35px rgba(197, 164, 126, 0.4);
-        }
-
-        .card-soft {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .section-label {
-            color: #C5A47E;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 0.4em;
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 1rem;
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #080808; color: #E5E1DA; -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .button-glow { box-shadow: 0 0 25px rgba(197, 164, 126, 0.2); transition: all 0.3s ease; }
+        .button-glow:hover { transform: translateY(-2px); box-shadow: 0 5px 35px rgba(197, 164, 126, 0.4); }
+        .card-soft { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .section-label { color: #C5A47E; font-size: 10px; font-weight: 700; letter-spacing: 0.4em; text-transform: uppercase; display: block; margin-bottom: 1.5rem; }
+        details summary::-webkit-details-marker { display:none; }
     </style>
 </head>
-
 <body>
 
-    <!-- Navigation -->
     <nav class="site-header border-b border-white/5 sticky top-0 bg-nura-background/95 backdrop-blur-md z-50">
-        <div class="header-container max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="site-logo text-xl font-title tracking-[0.4em] text-nura-gold uppercase">
-                Nura
-            </div>
-
-            <div class="desktop-menu hidden md:flex items-center gap-8 text-[10px] uppercase tracking-widest text-gray-400 font-semibold">
-                <a href="#product-benefits" class="hover:text-white transition">Formule</a>
-                <a href="#faq" class="hover:text-white transition">FAQ</a>
-            </div>
-
-            <a href="#achat" class="header-button bg-nura-light text-nura-background px-6 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase hover:bg-white transition">
-                Acheter
-            </a>
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-title tracking-[0.4em] text-nura-gold uppercase">Nura</div>
+            <a href="#achat" class="bg-nura-gold text-nura-background px-6 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase hover:bg-white transition">Je commence ma cure</a>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <header class="hero-section pt-16 pb-24 md:pt-28 md:pb-32 overflow-hidden">
-        <div class="hero-container max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-            <div class="hero-content text-center lg:text-left">
-                <span class="section-label">
-                    Complément alimentaire ciblé
-                </span>
-
-                <h1 class="hero-title text-4xl md:text-6xl mb-8 leading-[1.1] text-white">
-                    Soutenez votre <span class="text-nura-gold italic">équilibre nerveux</span> dans les journées sous pression.
+    <header class="pt-16 pb-24 md:pt-32 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="text-center lg:text-left">
+                <span class="section-label">Complément Équilibre Nerveux</span>
+                <h1 class="text-4xl md:text-6xl mb-8 leading-[1.1] text-white">
+                    Retrouvez un équilibre stable, même dans les <span class="text-nura-gold italic">journées intenses.</span>
                 </h1>
-
-                <p class="hero-description text-gray-400 text-lg mb-8 max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
-                    Nura est une formule premium à base de Safran, Rhodiola et Magnésium, pensée pour les personnes exposées au stress quotidien et soucieuses de leur bien-être.
+                <p class="text-gray-400 text-lg mb-10 font-light leading-relaxed">
+                    Complexe premium à base de Safran, Rhodiola et Magnésium conçu pour accompagner votre sérénité au quotidien.
                 </p>
-
-                <p class="hero-subtext text-gray-500 text-sm mb-12 max-w-xl font-light leading-relaxed mx-auto lg:mx-0">
-                    Une cure simple, ciblée et lisible pour accompagner les périodes intenses, préserver la clarté mentale et retrouver une sensation d’équilibre au quotidien.
-                </p>
-
-                <div class="hero-buttons flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="#achat" class="button-glow inline-block bg-nura-gold text-nura-background px-10 py-5 rounded-full font-bold text-xs tracking-[0.2em] uppercase">
-                        Commander Nura
-                    </a>
-                </div>
-
-                <div class="hero-points flex flex-col md:flex-row gap-4 md:gap-8 text-[9px] uppercase tracking-widest text-gray-500 font-bold justify-center lg:justify-start mt-10">
-                    <span>✓ Cure 30 jours</span>
-                    <span>✓ Formule ciblée</span>
-                    <span>✓ Actifs sélectionnés</span>
-                </div>
+                <a href="#achat" class="button-glow inline-block bg-nura-gold text-nura-background px-10 py-5 rounded-full font-bold text-xs tracking-[0.2em] uppercase">
+                    Commencer ma cure — 39€
+                </a>
             </div>
-
-            <div class="hero-image-wrapper relative group">
-                <div class="hero-image-glow absolute inset-0 bg-nura-gold/5 blur-[120px] rounded-full"></div>
-
-                <img
-                    src="img/pot nura site.png"
-                    alt="Pot Nura No Stress"
-                    class="hero-image relative rounded-2xl shadow-2xl w-full max-w-sm mx-auto border border-white/10"
-                >
+            <div class="relative">
+                <div class="absolute inset-0 bg-nura-gold/5 blur-[120px] rounded-full"></div>
+                <img src="img/pot_nura_accueil.png" alt="Nura No Stress" class="relative rounded-2xl shadow-2xl w-full max-w-sm mx-auto border border-white/10">
             </div>
         </div>
     </header>
 
-      <!-- Product benefits and formula -->
-    <section id="probleme" class="problem-section py-28">
-    <div class="max-w-4xl mx-auto px-6 text-center">
+    <section class="py-32 bg-nura-background border-y border-white/5">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <span class="section-label">Le constat</span>
+            <h2 class="text-3xl md:text-5xl text-white mb-24 italic leading-tight">Le rythme ne ralentit plus.<br>Votre organisme, si.</h2>
+            
+            <div class="grid md:grid-cols-3 gap-20 md:gap-12">
+                <div class="flex flex-col items-center">
+                    <h3 class="text-nura-gold text-4xl md:text-5xl font-title italic mb-6">Fatigue</h3>
+                    <p class="text-white font-light text-base leading-relaxed max-w-[240px]">Une fatigue mentale persistante au fil des heures.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h3 class="text-nura-gold text-4xl md:text-5xl font-title italic mb-6">Humeur</h3>
+                    <p class="text-white font-light text-base leading-relaxed max-w-[240px]">Une irritabilité accrue face aux sollicitations.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h3 class="text-nura-gold text-4xl md:text-5xl font-title italic mb-6">Tension</h3>
+                    <p class="text-white font-light text-base leading-relaxed max-w-[240px]">Une difficulté réelle à relâcher en fin de journée.</p>
+                </div>
+            </div>
 
-        <span class="section-label">Pourquoi Nura</span>
-
-        <h2 class="text-3xl md:text-5xl text-white mb-10 leading-tight">
-            Parce que le stress moderne ne s’arrête jamais vraiment.
-        </h2>
-
-        <p class="text-gray-400 text-lg leading-relaxed mb-6 font-light">
-            Notifications, pression mentale, charge quotidienne, rythme soutenu...
-            Même lorsque la journée se termine, l’organisme reste souvent sous tension.
-            Avec le temps, cela peut impacter la clarté mentale, l’équilibre émotionnel
-            et la sensation de récupération.
-        </p>
-
-        <p class="text-nura-gold text-lg italic leading-relaxed font-light mt-10">
-            C’est pour accompagner cette réalité qu’est née la formule Nura.
-        </p>
-
-    </div>
-</section>
-    <!-- Product benefits and formula -->
-    <section id="product-benefits" class="formula-section py-28 bg-nura-card/30 border-y border-white/5">
-        <div class="formula-container max-w-6xl mx-auto px-6">
-            <div class="section-intro text-center mb-16">
-                <span class="section-label">Une réponse ciblée</span>
-
-                <h2 class="section-title text-3xl md:text-4xl text-white mb-6">
-                    Des actifs clés pour accompagner l’équilibre nerveux et émotionnel
-                </h2>
-
-                <p class="section-description text-gray-500 max-w-2xl mx-auto font-light leading-relaxed">
-                    Nura réunit trois actifs essentiels dans une formule claire : le Safran, la Rhodiola et le Magnésium. Chaque ingrédient joue un rôle précis pour aider l’organisme à mieux traverser les périodes de tension.
+            <div class="mt-32">
+                <p class="text-gray-500 text-sm max-w-2xl mx-auto leading-relaxed font-light mb-8 italic">
+                    Notifications constantes, charge mentale, pression quotidienne… Même lorsque vous vous arrêtez, votre système nerveux reste sollicité.
                 </p>
-            </div>
-
-            <div class="ingredients-grid grid md:grid-cols-3 gap-8">
-                <article class="ingredient-card card-soft rounded-3xl p-10 text-center">
-                    <span class="ingredient-name text-nura-gold font-title text-3xl block mb-6">
-                        Safran
-                    </span>
-
-                    <h3 class="ingredient-title text-white text-xl mb-4">
-                        Équilibre émotionnel
-                    </h3>
-
-                    <p class="ingredient-description text-gray-500 text-sm leading-relaxed font-light">
-                        Le safran aide à soutenir l’équilibre émotionnel et accompagne un état d’esprit plus stable au quotidien.
-                    </p>
-                </article>
-
-                <article class="ingredient-card card-soft rounded-3xl p-10 text-center">
-                    <span class="ingredient-name text-nura-gold font-title text-3xl block mb-6">
-                        Rhodiola
-                    </span>
-
-                    <h3 class="ingredient-title text-white text-xl mb-4">
-                        Adaptation au stress
-                    </h3>
-
-                    <p class="ingredient-description text-gray-500 text-sm leading-relaxed font-light">
-                        La rhodiola aide l’organisme à mieux s’adapter aux périodes de tension, de pression et de fatigue mentale.
-                    </p>
-                </article>
-
-                <article class="ingredient-card card-soft rounded-3xl p-10 text-center">
-                    <span class="ingredient-name text-nura-gold font-title text-3xl block mb-6">
-                        Magnésium
-                    </span>
-
-                    <h3 class="ingredient-title text-white text-xl mb-4">
-                        Système nerveux
-                    </h3>
-
-                    <p class="ingredient-description text-gray-500 text-sm leading-relaxed font-light">
-                        Le magnésium contribue au fonctionnement normal du système nerveux et aide à réduire la fatigue.
-                    </p>
-                </article>
-            </div>
-
-            <div class="formula-cta text-center mt-14">
-                <a href="#achat" class="button-glow inline-block bg-nura-gold text-nura-background px-12 py-5 rounded-full font-bold text-xs tracking-[0.2em] uppercase">
-                    Commander Nura No Stress
-                </a>
+                <p class="text-nura-gold text-xl italic font-light tracking-wide">
+                    Ce déséquilibre n’est pas une fatalité — mais il nécessite un soutien adapté.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Purchase -->
-    <section id="achat" class="purchase-section py-24">
-        <div class="purchase-container max-w-6xl mx-auto px-6">
-            <div class="purchase-card card-soft rounded-[2rem] p-8 md:p-12 grid lg:grid-cols-2 gap-12 items-center">
-                <div class="purchase-image-wrapper relative">
-                    <div class="purchase-image-glow absolute inset-0 bg-nura-gold/5 blur-[100px] rounded-full"></div>
-
-                    <img
-                        src="img/pot nura site.png"
-                        alt="Pot Nura No Stress"
-                        class="purchase-image relative rounded-2xl shadow-2xl w-full max-w-sm mx-auto border border-white/10"
-                    >
+    <section class="py-28">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="section-label">La solution</span>
+            <h2 class="text-3xl md:text-4xl text-white mb-10">Une approche ciblée, sans complexité.</h2>
+            <p class="text-gray-400 text-lg leading-relaxed mb-8 font-light">
+                NURA a été formulé autour de trois actifs reconnus pour leur rôle dans l’équilibre nerveux et émotionnel. Pas de formule inutilement complexe. Pas de promesse excessive. Une base claire, pensée pour s’intégrer durablement dans votre quotidien.
+            </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-soft rounded-3xl p-10 text-center hover:border-nura-gold/30 transition">
+                    <span class="text-nura-gold font-title text-3xl block mb-6 italic">Safran</span>
+                    <h3 class="text-white text-xl mb-4 italic uppercase tracking-widest text-xs">Équilibre émotionnel</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">Le safran aide à soutenir l’équilibre émotionnel et accompagne un état d’esprit plus stable au quotidien.</p>
                 </div>
-
-                <div class="purchase-content text-center lg:text-left">
-                    <span class="section-label">Commander</span>
-
-                    <h2 class="purchase-title text-3xl md:text-4xl text-white mb-6">
-                        Nura No Stress
-                    </h2>
-
-                    <p class="purchase-description text-gray-500 font-light leading-relaxed mb-8">
-                        Une cure de 30 jours pensée pour accompagner les périodes de stress, soutenir l’équilibre nerveux et intégrer une routine bien-être simple au quotidien.
-                    </p>
-
-                    <div class="purchase-details grid sm:grid-cols-3 gap-4 mb-10">
-                        <div class="purchase-detail card-soft rounded-2xl p-5 text-center">
-                            <p class="text-nura-gold text-xl mb-2">30</p>
-                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Jours</p>
-                        </div>
-
-                        <div class="purchase-detail card-soft rounded-2xl p-5 text-center">
-                            <p class="text-nura-gold text-xl mb-2">3</p>
-                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Actifs clés</p>
-                        </div>
-
-                        <div class="purchase-detail card-soft rounded-2xl p-5 text-center">
-                            <p class="text-nura-gold text-xl mb-2">1</p>
-                            <p class="text-[10px] uppercase tracking-widest text-gray-500">Routine simple</p>
-                        </div>
-                    </div>
-
-                    <a href="https://stripe.com" target="_blank" rel="noopener noreferrer" class="button-glow inline-block bg-nura-gold text-nura-background px-12 py-5 rounded-full font-bold text-xs tracking-[0.2em] uppercase">
-                        Acheter maintenant
-                    </a>
-
-                    <p class="purchase-note text-gray-600 text-xs font-light mt-5">
-                        Paiement sécurisé via Stripe.
-                    </p>
+                <div class="card-soft rounded-3xl p-10 text-center hover:border-nura-gold/30 transition">
+                    <span class="text-nura-gold font-title text-3xl block mb-6 italic">Rhodiola</span>
+                    <h3 class="text-white text-xl mb-4 italic uppercase tracking-widest text-xs">Adaptation au stress</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">La rhodiola aide l’organisme à mieux s’adapter aux périodes de tension, de pression et de fatigue mentale.</p>
+                </div>
+                <div class="card-soft rounded-3xl p-10 text-center hover:border-nura-gold/30 transition">
+                    <span class="text-nura-gold font-title text-3xl block mb-6 italic">Magnésium</span>
+                    <h3 class="text-white text-xl mb-4 italic uppercase tracking-widest text-xs">Système nerveux</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">Le magnésium contribue au fonctionnement normal du système nerveux et aide à réduire la fatigue.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="faq-section py-24">
-        <div class="faq-container max-w-4xl mx-auto px-6">
-            <div class="section-intro text-center mb-14">
-                <span class="section-label">FAQ</span>
-
-                <h2 class="section-title text-3xl md:text-4xl text-white mb-6">
-                    Questions fréquentes
-                </h2>
-
-                <p class="section-description text-gray-500 max-w-2xl mx-auto font-light leading-relaxed">
-                    Retrouvez les réponses aux questions les plus courantes sur la cure, la formule et l’utilisation de Nura.
-                </p>
-            </div>
-
-            <div class="faq-list space-y-5">
-                <details class="faq-item card-soft rounded-2xl p-6 group">
-                    <summary class="faq-question cursor-pointer text-white font-medium flex justify-between items-center gap-6">
-                        À qui s’adresse Nura ?
-                        <span class="faq-icon text-nura-gold text-xl group-open:rotate-45 transition">+</span>
-                    </summary>
-
-                    <p class="faq-answer text-gray-500 text-sm leading-relaxed font-light mt-4">
-                        Nura s’adresse aux personnes qui vivent un quotidien intense, souhaitent mieux accompagner leur équilibre nerveux et prennent soin de leur bien-être de manière régulière.
-                    </p>
-                </details>
-
-                <details class="faq-item card-soft rounded-2xl p-6 group">
-                    <summary class="faq-question cursor-pointer text-white font-medium flex justify-between items-center gap-6">
-                        Combien de temps dure une cure ?
-                        <span class="faq-icon text-nura-gold text-xl group-open:rotate-45 transition">+</span>
-                    </summary>
-
-                    <p class="faq-answer text-gray-500 text-sm leading-relaxed font-light mt-4">
-                        Une cure Nura est pensée pour durer 30 jours. Une utilisation régulière permet d’intégrer simplement le produit dans une routine bien-être.
-                    </p>
-                </details>
-
-                <details class="faq-item card-soft rounded-2xl p-6 group">
-                    <summary class="faq-question cursor-pointer text-white font-medium flex justify-between items-center gap-6">
-                        Quels sont les actifs principaux ?
-                        <span class="faq-icon text-nura-gold text-xl group-open:rotate-45 transition">+</span>
-                    </summary>
-
-                    <p class="faq-answer text-gray-500 text-sm leading-relaxed font-light mt-4">
-                        La formule repose sur trois actifs clés : le Safran, la Rhodiola et le Magnésium. Ils ont été sélectionnés pour leur rôle dans l’équilibre émotionnel, l’adaptation au stress et le fonctionnement normal du système nerveux.
-                    </p>
-                </details>
-
-                <details class="faq-item card-soft rounded-2xl p-6 group">
-                    <summary class="faq-question cursor-pointer text-white font-medium flex justify-between items-center gap-6">
-                        Est-ce que Nura remplace un traitement médical ?
-                        <span class="faq-icon text-nura-gold text-xl group-open:rotate-45 transition">+</span>
-                    </summary>
-
-                    <p class="faq-answer text-gray-500 text-sm leading-relaxed font-light mt-4">
-                        Non. Nura est un complément alimentaire et ne remplace pas un traitement médical, ni l’avis d’un professionnel de santé. En cas de doute, il est recommandé de demander conseil à un médecin ou à un pharmacien.
-                    </p>
-                </details>
-
-                <details class="faq-item card-soft rounded-2xl p-6 group">
-                    <summary class="faq-question cursor-pointer text-white font-medium flex justify-between items-center gap-6">
-                        Comment obtenir plus d’informations ?
-                        <span class="faq-icon text-nura-gold text-xl group-open:rotate-45 transition">+</span>
-                    </summary>
-
-                    <p class="faq-answer text-gray-500 text-sm leading-relaxed font-light mt-4">
-                        Pour toute question supplémentaire sur la formule, la cure ou l’utilisation de Nura, vous pouvez nous contacter par e-mail à l’adresse indiquée sur la page produit ou dans les mentions de contact du site.
-                    </p>
-                </details>
+    <section id="achat" class="py-32">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="card-soft rounded-[3rem] p-12 flex flex-col md:flex-row gap-16 items-center">
+                <img src="img/pot_nura_accueil.png" alt="Nura" class="w-full max-w-xs drop-shadow-2xl">
+                <div class="flex-1 text-center md:text-left">
+                    <span class="section-label">Commander Nura</span>
+                    <h2 class="text-4xl text-white mb-4">No Stress</h2>
+                    <p class="text-nura-gold text-3xl mb-8 font-title italic">39,00€</p>
+                    <ul class="space-y-4 mb-10 text-gray-400 text-sm font-light">
+                        <li>✓ Cure 30 jours (60 gélules)</li>
+                        <li>✓ 2 gélules par jour / routine simple</li>
+                        <li>✓ Livraison offerte en France</li>
+                        <li>✓ Conforme réglementation européenne</li>
+                    </ul>
+                    <a href="https://stripe.com" class="button-glow inline-block bg-nura-gold text-nura-background px-12 py-5 rounded-full font-bold text-xs tracking-[0.2em] uppercase w-full md:w-auto text-center">Je commence ma cure</a>
+                    <p class="mt-6 text-[10px] text-gray-600 uppercase tracking-widest">Paiement 100% sécurisé via Stripe</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="site-footer py-16 text-center text-[9px] text-gray-700 tracking-[0.5em] uppercase border-t border-white/5">
-        NURA LABS © 2026 • Complément alimentaire
+    <section id="faq" class="py-24 max-w-3xl mx-auto px-6 border-t border-white/5">
+        <div class="text-center mb-16">
+            <span class="section-label">FAQ</span>
+            <h2 class="text-3xl text-white italic">Questions fréquentes</h2>
+        </div>
+        <div class="space-y-4">
+            <details class="card-soft rounded-2xl group">
+                <summary class="flex justify-between items-center p-6 cursor-pointer text-white text-[10px] uppercase tracking-widest font-bold">
+                    Vais-je vraiment ressentir une différence ?
+                    <span class="text-nura-gold transition group-open:rotate-45">+</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-400 text-sm font-light leading-relaxed">
+                    Nura n’est pas un produit “coup de fouet” immédiat. La formule agit progressivement en soutenant votre système nerveux. Si certaines personnes ressentent un calme dès les premiers jours, les effets optimaux se construisent généralement après <span class="text-white font-medium">2 à 3 semaines</span> d’utilisation régulière.
+                </div>
+            </details>
+
+            <details class="card-soft rounded-2xl group">
+                <summary class="flex justify-between items-center p-6 cursor-pointer text-white text-[10px] uppercase tracking-widest font-bold">
+                    Cela va-t-il m’endormir ou me rendre “lent” ?
+                    <span class="text-nura-gold transition group-open:rotate-45">+</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-400 text-sm font-light leading-relaxed">
+                    <span class="text-white font-medium italic">Absolument pas.</span> Nura n’est pas un sédatif. Il est formulé pour accompagner votre équilibre nerveux sans altérer votre vigilance. L’objectif est de retrouver de la stabilité et de la clarté, même dans des journées exigeantes.
+                </div>
+            </details>
+
+            <details class="card-soft rounded-2xl group">
+                <summary class="flex justify-between items-center p-6 cursor-pointer text-white text-[10px] uppercase tracking-widest font-bold">
+                    Est-ce adapté à une prise quotidienne ?
+                    <span class="text-nura-gold transition group-open:rotate-45">+</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-400 text-sm font-light leading-relaxed">
+                    Oui. La formule a été pensée pour une utilisation régulière, avec des dosages conformes aux apports recommandés (VNR). Comme pour tout complément, il suffit de respecter les conseils d’utilisation indiqués sur l’étiquette.
+                </div>
+            </details>
+
+            <details class="card-soft rounded-2xl group">
+                <summary class="flex justify-between items-center p-6 cursor-pointer text-white text-[10px] uppercase tracking-widest font-bold">
+                    Puis-je le prendre avec d’autres traitements ?
+                    <span class="text-nura-gold transition group-open:rotate-45">+</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-400 text-sm font-light leading-relaxed">
+                    Dans la majorité des cas, oui. Cependant, par précaution : le produit est déconseillé aux femmes enceintes ou allaitantes, et il est recommandé de demander l’avis d’un professionnel de santé en cas de prise <span class="text-white font-medium italic">d'antidépresseurs</span> (lié à la présence de safran).
+                </div>
+            </details>
+
+            <details class="card-soft rounded-2xl group">
+                <summary class="flex justify-between items-center p-6 cursor-pointer text-white text-[10px] uppercase tracking-widest font-bold">
+                    Différence avec les autres "anti-stress" ?
+                    <span class="text-nura-gold transition group-open:rotate-45">+</span>
+                </summary>
+                <div class="px-6 pb-6 text-gray-400 text-sm font-light leading-relaxed">
+                    Nura fait le choix inverse du marché : une formule courte, des actifs ciblés et des dosages 100% transparents. L’objectif n’est pas d’accumuler les ingrédients, mais de rester cohérent et compréhensible pour votre système nerveux.
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center text-[9px] text-gray-700 tracking-[0.5em] uppercase border-t border-white/5">
+        NURA LABS © 2026 • Complément alimentaire • Made for peace of mind
     </footer>
 
 </body>
